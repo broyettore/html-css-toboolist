@@ -12,7 +12,7 @@ html {
 
 body {
     background-color: #f6f8f9;
-    color: #42464f;
+    color: black;
 }
 
 /* header css start  */
@@ -38,8 +38,7 @@ body {
 /* main overall rules  */
 
 main {
-    max-width: 80%;
-    height: 100vh;
+    max-width: 50%;
     margin: 0 auto;
     background-color: #fff;
     margin-top: 50px;
@@ -69,7 +68,7 @@ main {
     background-color: #46adf1;
     color: #fff;
     border: 2px solid #46adf1;
-    width: 70px;
+    width: 80px;
     margin: 0 8px 0 40px;
 }
 
@@ -77,24 +76,47 @@ main {
     background-color: transparent;
     color: #cfd4d8;
     border: 2px solid #ced3d7;
-    width: 90px;
+    width: 95px;
 }
 
 /* button section css end  */
 
 /* Reusable Css Rules  */
+
 section {
-    padding: 40px;
+    padding: 40px 40px 0;
 }
 
-.first-section ul {
+section ul {
     display: inline-block;
 }
 
-.first-section ul li  {
+section ul li  {
     list-style-type: none;
-    list-style-position: inside;
-    margin-right: 5px;
+    list-style-position: outside;
+    margin: 0 5px 0 0;
+    vertical-align: middle;
+}
+
+section ul li::before {
+    content: "\2713";
+    border: 1px solid #8dd2c3;
+    border-radius: 50%;
+    padding: 0 3px;
+    color: #8dd2c3;
+    font-weight: bold;
+    margin: 0 8px 0 0;
+    vertical-align: middle;
+}
+
+.cross::before {
+    content: "\2715";
+    border: 1px solid #ef807c;
+    border-radius: 50%;
+    padding: 0 3px;
+    color: #ef807c;
+    font-weight: bold;
+    margin: 0 8px 0 0;
     vertical-align: middle;
 }
 
@@ -108,7 +130,7 @@ h2 {
 }
 
 section ul li {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 500;
 }
 
@@ -116,31 +138,68 @@ section ul li {
     display: inline-block;
     font-weight: bold;
     text-align: center;
-    width: 60px;
-    padding: 6px;
-    border: 1px solid #45abea;
+    font-size: 1.1rem;
+    margin-left: 5px;
+    padding: 6px 10px;
+    border: 1px solid transparent;
     border-radius: 10px;
     vertical-align: middle;
 }
+
 /* Reusable Css Rules  end */
 
 /* new task section css  */
-
-.first-section ul li::before {
-    content: "\2713";
-    border: 1px solid #8dd2c3;
-    border-radius: 50%;
-    padding: 0 3px;
-    color: #8dd2c3;
-    font-weight: bold;
-    margin: 0 8px 0 0;
-    vertical-align: middle;
-}
 
 .blue-tag {
     background-color: #45abea;
     color: #fff;
 }
+
 /* new task section css  ends*/
+
+/* today section css  */
+
+.second-section ul li {
+    padding: 12px 0;
+}
+
+.purple-tag {
+    background-color: #a27be5;
+    color: #fff;
+}
+
+.lgreen-tag {
+    background-color: #64c0a9;
+    color: #fff;
+}
+
+.orange-tag {
+    background-color: #f5ba6b;
+    color: #fff;
+}
+
+/* /today section css ends  */
+
+/* upcoming section stars  */
+
+.third-section {
+    margin-bottom: 40px;
+}
+
+.third-section ul li {
+    padding: 12px 0;
+}
+
+.magenta-tag {
+    background-color: #d863a1;
+    color: #fff;
+}
+
+.green-tag {
+    background-color: #aec721;
+    color: #fff;
+}
+
+/* upcoming section ends  */
 
 
