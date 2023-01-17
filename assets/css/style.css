@@ -82,4 +82,65 @@ main {
 
 /* button section css end  */
 
+/* Reusable Css Rules  */
+section {
+    padding: 40px;
+}
+
+.first-section ul {
+    display: inline-block;
+}
+
+.first-section ul li  {
+    list-style-type: none;
+    list-style-position: inside;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.arrow-down {
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 2.6rem;
+    margin-bottom: 10px;
+}
+
+section ul li {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.colored-tag {
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    width: 60px;
+    padding: 6px;
+    border: 1px solid #45abea;
+    border-radius: 10px;
+    vertical-align: middle;
+}
+/* Reusable Css Rules  end */
+
+/* new task section css  */
+
+.first-section ul li::before {
+    content: "\2713";
+    border: 1px solid #8dd2c3;
+    border-radius: 50%;
+    padding: 0 3px;
+    color: #8dd2c3;
+    font-weight: bold;
+    margin: 0 8px 0 0;
+    vertical-align: middle;
+}
+
+.blue-tag {
+    background-color: #45abea;
+    color: #fff;
+}
+/* new task section css  ends*/
+
 
