@@ -92,7 +92,8 @@ main {
 /* Reusable Css Rules  */
 
 section {
-    padding: 40px 40px 0;
+    padding: 0 40px;
+    margin-bottom: 20px;
 }
 
 section ul {
@@ -101,8 +102,9 @@ section ul {
 
 section ul li  {
     list-style-type: none;
-    list-style-position: outside;
-    margin: 0 5px 0 0;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 10px 0 20px;
     vertical-align: middle;
 }
 
@@ -111,9 +113,10 @@ section ul li::before {
     border: 1px solid #8dd2c3;
     border-radius: 50%;
     padding: 0 3px;
-    color: #8dd2c3;
-    font-weight: bold;
     margin: 0 8px 0 0;
+    color: #8dd2c3;
+    font-size: 1.6rem;
+    font-weight: bold;
     vertical-align: middle;
 }
 
@@ -122,31 +125,27 @@ section ul li::before {
     border: 1px solid #ef807c;
     border-radius: 50%;
     padding: 0 3px;
-    color: #ef807c;
-    font-weight: bold;
     margin: 0 8px 0 0;
+    color: #ef807c;
+    font-size: 1.6rem;
+    font-weight: bold;
     vertical-align: middle;
 }
 
 .arrow-down {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 h2 {
     font-size: 2.6rem;
-    margin-bottom: 10px;
-}
-
-section ul li {
-    font-size: 1.8rem;
-    font-weight: 500;
 }
 
 .colored-tag {
     display: inline-block;
-    font-weight: bold;
     text-align: center;
+    font-weight: bold;
     font-size: 1.1rem;
+    color: #fff;
     margin-left: 5px;
     padding: 6px 10px;
     border: 1px solid transparent;
@@ -158,32 +157,28 @@ section ul li {
 
 /* new task section css  */
 
+.first-section {
+    margin-top: 40px;
+}
+
 .blue-tag {
     background-color: #45abea;
-    color: #fff;
 }
 
 /* new task section css  ends*/
 
 /* today section css  */
 
-.second-section ul li {
-    padding: 12px 0;
-}
-
 .purple-tag {
     background-color: #a27be5;
-    color: #fff;
 }
 
 .lgreen-tag {
     background-color: #64c0a9;
-    color: #fff;
 }
 
 .orange-tag {
     background-color: #f5ba6b;
-    color: #fff;
 }
 
 /* /today section css ends  */
@@ -194,18 +189,12 @@ section ul li {
     margin-bottom: 40px;
 }
 
-.third-section ul li {
-    padding: 12px 0;
-}
-
 .magenta-tag {
     background-color: #d863a1;
-    color: #fff;
 }
 
 .green-tag {
     background-color: #aec721;
-    color: #fff;
 }
 
 /* upcoming section ends  */
